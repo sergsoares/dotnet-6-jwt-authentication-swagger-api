@@ -3,6 +3,13 @@
 - Fazer clone do projeto
 - Executar ele com dotnet run ou dotnet watch
 
+## Do código
+
+Os principais arquivos que precisa entender são o de:
+
+- Controllers/UsersControllers.cs (Defini como as requisições vão ser tratadas)
+- Services/UserService.cs (Onde estamos retornando nossos usuarios e gerando o token deles)
+
 
 # Requisição pra listar os usuarios (vai dar erro porque não tem token mas roda ela)
 curl --location --request GET 'localhost:4000/users' \
