@@ -33,6 +33,22 @@ Exemplo da resposta:
 ```
 
 # Requisição pra listar os usuarios (nessa precisamos gerar o token, dai copiarmos o valor do do token ali de cima e usamos pra listar)
+```
 curl --location --request GET 'localhost:4000/users' \
 --header 'Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjEiLCJuYmYiOjE2OTQ4MjEyODcsImV4cCI6MTY5NTQyNjA4NywiaWF0IjoxNjk0ODIxMjg3fQ.oaFnlLy0g8HCRoIxRA7hTv-wA7_xvRjLyuPPwdX-DnE'
+```
+
+
+Resposta vai ser
+```
+[
+    {
+        "id": 1,
+        "firstName": "Thales",
+        "lastName": "Liscano",
+        "username": "thales"
+    }
+]
+```
+
 * Lembrar de trocar o valor depois do Authorization: pelo valor do token
