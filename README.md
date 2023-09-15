@@ -12,21 +12,27 @@ Os principais arquivos que precisa entender são o de:
 
 
 # Requisição pra listar os usuarios (vai dar erro porque não tem token mas roda ela)
+```
 curl --location --request GET 'localhost:4000/users' \
 --data-raw ''
+```
 
-Resposta vai ser 
+Resposta vai ser essa porque não temos o token:
+```
 {
     "message": "Unauthorized"
 }
+```
 
 # Requisição pra rodar no terminal para gerar o teu token
+```
 curl --location --request POST 'localhost:4000/users/authenticate' \
 --header 'Content-Type: application/json' \
 --data-raw '{
     "username": "thales",
     "password": "thalesthales"
 }'
+```
 
 Exemplo da resposta:
 ```
@@ -57,5 +63,4 @@ Resposta vai ser
     }
 ]
 ```
-
 * Lembrar de trocar o valor depois do Authorization: pelo valor do token
